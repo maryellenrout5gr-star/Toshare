@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>长城像素志 | 首页</title>
+    <meta
+      name="description"
+      content="以像素交换动效和技术文档式界面呈现长城的地貌、建筑与精神。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="site-shell">
+      <aside class="sidebar" aria-label="站点导航">
+        <a class="brand" href="./index.html" aria-label="长城像素志首页">
+          <span class="brand-mark"></span>
+          <span>
+            <strong>长城像素志</strong>
+            <small>Great Wall / Pixel</small>
+          </span>
+        </a>
+
+        <nav class="side-nav">
+          <span class="nav-label">Pages</span>
+          <a class="active" href="./index.html">概览</a>
+          <a href="./history.html">历史与路线</a>
+        </nav>
+
+        <div class="side-panel">
+          <span class="panel-kicker">坐标</span>
+          <strong>40.4319° N</strong>
+          <p>北京怀柔一线，山脊上的城墙把地形、军事与工艺缝合成连续的边界。</p>
+        </div>
+      </aside>
+
+      <main class="page">
+        <header class="topbar">
+          <button class="icon-button" type="button" aria-label="打开菜单" data-menu-toggle>
+            <span></span><span></span><span></span>
+          </button>
+          <div class="command-pill">pixel-swap / great-wall</div>
+          <nav class="top-links" aria-label="快捷导航">
+            <a href="#features">结构</a>
+            <a href="#story">精神</a>
+            <a href="./history.html">下一页</a>
+          </nav>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">UNESCO World Heritage / China</p>
+            <h1>长城，不只是一道墙。</h1>
+            <p class="lead">
+              它是沿山势生长的防御系统，也是跨越两千多年工程经验的可视化档案。
+              这套两页网站用像素交换的方式，把烽燧、关隘、城台与山脊重新拼合。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="./history.html">查看历史与路线</a>
+            </div>
+          </div>
+
+          <div class="demo-frame" id="pixel-demo">
+            <div class="frame-toolbar">
+              <span>Pixel Swap Preview</span>
+              <div class="window-controls" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="pixel-stage" data-pixel-stage>
+              <img
+                src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80"
+                alt="山脊上的长城"
+              />
+              <div class="pixel-grid" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-band" aria-label="长城数据">
+          <article>
+            <span>总长度</span>
+            <strong>21,196 km</strong>
+            <p>明长城与历代墙体、壕堑、关堡等遗存共同组成。</p>
+          </article>
+          <article>
+            <span>核心形态</span>
+            <strong>墙、台、关、堡</strong>
+            <p>军事通信、防御驻扎和地形控制被组织成连续系统。</p>
+          </article>
+          <article>
+            <span>代表段落</span>
+            <strong>八达岭 / 慕田峪</strong>
+            <p>修缮成熟、交通便利，适合初次理解长城的空间结构。</p>
+          </article>
+        </section>
+
+        <section class="content-grid" id="features">
+          <div class="section-heading">
+            <p class="eyebrow">Architecture</p>
+            <h2>长城的关键构件</h2>
+          </div>
+          <article class="feature">
+            <span class="feature-index">01</span>
+            <h3>城墙</h3>
+            <p>墙体顺应山势，借天然坡度提升防御能力。砖石、夯土与山石材料因地区而异。</p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">02</span>
+            <h3>敌楼</h3>
+            <p>敌楼用于瞭望、屯兵和射击，像节点一样让长距离防线保持节奏和控制范围。</p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">03</span>
+            <h3>烽燧</h3>
+            <p>白天放烟、夜间举火，信息能沿线快速传递，是古代边防通信系统的关键。</p>
+          </article>
+        </section>
+
+        <section class="story-panel" id="story">
+          <div>
+            <p class="eyebrow">Meaning</p>
+            <h2>它把边界变成了风景。</h2>
+          </div>
+          <p>
+            今天的长城早已不再承担军事功能，却仍然保留着一种强烈的空间语言：
+            人在山上修筑秩序，也被山势重新塑形。站在城墙上看到的不只是砖石，
+            还有一整套关于地理、技术、组织和时间的答案。
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
